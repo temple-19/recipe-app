@@ -1,9 +1,20 @@
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .app__recipes {
+    grid-template-columns: 1fr; /* Display recipes in a single column */
+    gap: 20px; /* Add some spacing between recipe tiles */
+  }
+}
+
+
+
+
 .app {
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 40px 24px;
 }
 
 .app__searchForm {
@@ -11,11 +22,10 @@
 }
 
 .app__input {
-    padding: 6px 16px;
-    min-width: 200px;
-    max-width: 100vw;
-    font-size: 15px;
-
+    padding: 10px 16px; /* Adjust padding for better spacing */
+  width: 100%; /* Make the input element take full width */
+  max-width: 400px; /* Set a maximum width for the input */
+  font-size: 15px;
 }
 
 .app__submit {
@@ -48,6 +58,7 @@
 }
 
 .app__healthLabels {
+    width: 100%;
     padding: 7px 8px;
     margin-left: 6px;
     border-radius: 4px;
